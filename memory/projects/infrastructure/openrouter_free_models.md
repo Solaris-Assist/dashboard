@@ -15,4 +15,4 @@ Identificar modelos gratuitos no OpenRouter que sejam compatíveis com o ecossis
 3. **Tool Use:** Conseguem usar as ferramentas do OpenClaw (web_search, gog, etc.)?
 
 ## Status do Cron
-- [ ] Primeira pesquisa massiva agendada.
+- [ ] Primeira pesquisa massiva agendada para as 04:00.
