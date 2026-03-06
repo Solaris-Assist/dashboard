@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solaris OS - Full System Dashboard</title>
+    <title>Solaris OS - Cérebro Digital</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -12,225 +12,116 @@
         .glow { box-shadow: 0 0 30px rgba(245, 158, 11, 0.15); }
         .accent-color { color: #f59e0b; }
         .bg-accent { background-color: #f59e0b; }
-        .border-accent { border-color: #f59e0b; }
-        .step-line::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, #f59e0b, transparent); }
         .folder-tree { border-left: 1px solid #27272a; margin-left: 0.5rem; padding-left: 1rem; }
-        .glass { background: rgba(24, 24, 27, 0.8); backdrop-filter: blur(10px); }
     </style>
 </head>
 <body class="p-4 md:p-8">
-    <div class="max-w-7xl mx-auto">
-        
-        <!-- TOP NAVIGATION / STATUS BAR -->
-        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-4 border-b border-zinc-800 pb-6">
+    <div class="max-w-6xl mx-auto">
+        <header class="mb-12 border-b border-zinc-800 pb-6 flex justify-between items-end">
             <div>
-                <h1 class="text-5xl font-black accent-color tracking-tighter italic">SOLARIS<span class="text-white font-light">SYSTEM</span></h1>
-                <p class="text-zinc-500 terminal-font text-xs mt-1 uppercase tracking-widest">Autonomous Personal Intelligence // Root Access</p>
+                <h1 class="text-4xl font-black accent-color tracking-tighter italic">SOLARIS<span class="text-white font-light">SYSTEM</span></h1>
+                <p class="text-zinc-500 terminal-font text-xs mt-1 uppercase tracking-widest italic">The Truth Behind the Code</p>
             </div>
-            <div class="flex gap-4">
-                <div class="text-right px-4 border-r border-zinc-800">
-                    <p class="text-zinc-500 text-[10px] uppercase font-bold tracking-tighter">Status</p>
-                    <p class="text-green-500 font-bold text-sm flex items-center gap-2 justify-end">
-                        ONLINE <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                    </p>
-                </div>
-                <div class="text-right">
-                    <p class="text-zinc-500 text-[10px] uppercase font-bold tracking-tighter">Operator</p>
-                    <p class="text-white font-bold text-sm uppercase">Ricardo #001</p>
-                </div>
+            <div class="text-right">
+                <p class="text-zinc-500 text-[10px] uppercase font-bold tracking-widest">Data Actual</p>
+                <p class="text-white font-bold text-sm">06 MARÇO 2026</p>
             </div>
-        </div>
+        </header>
 
         <div class="grid lg:grid-cols-12 gap-8">
-            
-            <!-- LEFT COLUMN: SYSTEM CORE -->
-            <div class="lg:col-span-4 space-y-8">
-                
-                <!-- IDENTITY CARD -->
-                <section class="bg-zinc-900/80 p-6 rounded-xl border border-zinc-800 glow border-t-4 border-t-accent">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-black font-black text-xl italic">S</div>
-                        <div>
-                            <h2 class="text-lg font-bold leading-tight">Solaris AI</h2>
-                            <p class="text-zinc-500 text-xs">v2026.3.1-stable</p>
-                        </div>
-                    </div>
-                    <div class="space-y-4 text-sm">
-                        <div class="bg-black/40 p-4 rounded border border-zinc-800 italic text-zinc-400 leading-relaxed">
-                            "Não opero por comandos, mas por objetivos. Minha base é a sinceridade absoluta e a competência extrema."
-                        </div>
-                        <div class="grid grid-cols-2 gap-4 pt-2">
-                            <div class="bg-zinc-800/50 p-3 rounded text-center">
-                                <p class="text-[10px] text-zinc-500 uppercase font-bold mb-1">API Tier</p>
-                                <p class="text-white font-mono text-xs">T1 Pro</p>
-                            </div>
-                            <div class="bg-zinc-800/50 p-3 rounded text-center">
-                                <p class="text-[10px] text-zinc-500 uppercase font-bold mb-1">Credits</p>
-                                <p class="text-green-500 font-mono text-xs">€250.00</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- FILE SYSTEM TREE (THE FULL VERSION) -->
-                <section class="bg-zinc-900/50 p-6 rounded-xl border border-zinc-800">
-                    <h2 class="text-xs uppercase tracking-[0.2em] text-zinc-500 mb-6 font-black flex items-center justify-between">
-                        Cérebro Digital (Workspace)
-                        <span class="text-accent text-[10px] font-mono">/root/.openclaw/workspace</span>
+            <!-- FULL ARCHITECTURE MAP -->
+            <div class="lg:col-span-12">
+                <section class="bg-zinc-900/50 p-8 rounded-xl border border-zinc-800 glow">
+                    <h2 class="text-xl font-bold mb-8 flex items-center gap-3">
+                        <span class="bg-accent text-black px-2 py-0.5 rounded text-xs">ROOT</span> 
+                        Mapeamento Completo do Sistema (File System)
                     </h2>
                     
-                    <div class="terminal-font text-xs space-y-1 text-zinc-400">
-                        <div class="flex items-center gap-2 text-white font-bold"><span class="text-accent">📜</span> SOUL.md <span class="text-[9px] font-normal text-zinc-600 italic"># My Essence</span></div>
-                        <div class="flex items-center gap-2 text-white font-bold"><span class="text-accent">📜</span> AGENTS.md <span class="text-[9px] font-normal text-zinc-600 italic"># Operating Protocols</span></div>
-                        <div class="flex items-center gap-2 text-white"><span class="text-accent">📜</span> MEMORY.md <span class="text-[9px] font-normal text-zinc-600 italic"># Long-term Context</span></div>
-                        <div class="flex items-center gap-2 text-white"><span class="text-accent">📜</span> IDENTITY.md <span class="text-[9px] font-normal text-zinc-600 italic"># Visual Identity</span></div>
-                        
-                        <div class="pt-4 text-white font-bold">📂 memory/</div>
-                        <div class="folder-tree">
-                            <div class="text-zinc-300">📂 daily/ <span class="text-zinc-600 italic ml-2"># Session Logs</span></div>
-                            <div class="folder-tree text-zinc-500">
-                                <div>📄 2026-03-01..05.md</div>
-                                <div class="text-accent font-bold">📄 06.md <span class="bg-accent/10 px-1 rounded ml-1 text-[8px]">ACTIVE</span></div>
-                            </div>
-                            
-                            <div class="text-zinc-300 pt-2 font-bold">📂 decisions/ <span class="text-accent text-[8px] border border-accent/30 px-1 rounded ml-1 uppercase">New</span></div>
-                            <div class="folder-tree text-zinc-500">
-                                <div>📄 LOG.md <span class="text-zinc-600 italic"># Strategic Choices</span></div>
-                            </div>
-
-                            <div class="text-zinc-300 pt-2 font-bold">📂 projects/</div>
-                            <div class="folder-tree">
-                                <div class="text-white">📂 ecommerce/</div>
-                                <div class="folder-tree">
-                                    <div class="text-accent font-bold">📂 research/</div>
-                                    <div>📄 tasks.md</div>
-                                </div>
-                                <div>📄 PROJECTS.md</div>
-                            </div>
-
-                            <div class="text-zinc-300 pt-2 font-bold">📂 assets/ <span class="text-accent text-[8px] border border-accent/30 px-1 rounded ml-1 uppercase">New</span></div>
-                            <div class="folder-tree">
-                                <div class="text-white">📂 branding/</div>
-                                <div class="folder-tree opacity-60">
-                                    <div>📄 roadmap.md</div>
+                    <div class="grid md:grid-cols-2 gap-12 terminal-font text-sm">
+                        <!-- Left Side: Core Files -->
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="text-zinc-500 text-[10px] uppercase font-bold mb-4 tracking-widest">/ (Raiz - Identidade e Regras)</h3>
+                                <div class="space-y-2">
+                                    <div class="flex items-center gap-2 text-white font-bold"><span class="text-accent">📜</span> SOUL.md <span class="text-[10px] font-normal text-zinc-600 italic ml-2"># Minha alma e princípios</span></div>
+                                    <div class="flex items-center gap-2 text-white font-bold"><span class="text-accent">📜</span> AGENTS.md <span class="text-[10px] font-normal text-zinc-600 italic ml-2"># Protocolos de execução (Scientist Mode)</span></div>
+                                    <div class="flex items-center gap-2 text-white"><span class="text-accent">📜</span> USER.md <span class="text-[10px] font-normal text-zinc-600 italic ml-2"># Perfil e preferências do Ricardo</span></div>
+                                    <div class="flex items-center gap-2 text-white"><span class="text-accent">📜</span> IDENTITY.md <span class="text-[10px] font-normal text-zinc-600 italic ml-2"># Minha identidade visual</span></div>
+                                    <div class="flex items-center gap-2 text-white"><span class="text-accent">📜</span> MEMORY.md <span class="text-[10px] font-normal text-zinc-600 italic ml-2"># Índice central e Resumo de longo prazo</span></div>
                                 </div>
                             </div>
 
-                            <div class="text-zinc-300 pt-2 font-bold">📂 finance/ <span class="text-accent text-[8px] border border-accent/30 px-1 rounded ml-1 uppercase">New</span></div>
-                            
-                            <div class="text-zinc-300 pt-2 font-bold">📂 lessons/</div>
-                            <div class="folder-tree opacity-60">
-                                <div>📄 RELATIONSHIP.md</div>
-                                <div>📄 TECHNICAL.md</div>
-                            </div>
-                        </div>
-
-                        <div class="pt-4 text-white font-bold">📂 skills/</div>
-                        <div class="folder-tree opacity-60">
-                            <div class="text-blue-400">📂 gog</div>
-                            <div class="text-green-400">📂 1password</div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <!-- RIGHT COLUMN: INTELLIGENCE HUB -->
-            <div class="lg:col-span-8 space-y-8">
-                
-                <!-- TOP CARDS: QUICK INFO -->
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="bg-zinc-900/50 p-5 rounded-xl border border-zinc-800 flex flex-col items-center justify-center text-center">
-                        <div class="text-blue-500 mb-2">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                        </div>
-                        <p class="text-[10px] text-zinc-500 uppercase font-black tracking-widest">Inbox Auto-Triagem</p>
-                        <p class="text-white font-bold">ACTIVA</p>
-                    </div>
-                    <div class="bg-zinc-900/50 p-5 rounded-xl border border-zinc-800 flex flex-col items-center justify-center text-center">
-                        <div class="text-green-500 mb-2">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                        </div>
-                        <p class="text-[10px] text-zinc-500 uppercase font-black tracking-widest">GitHub Sync</p>
-                        <p class="text-white font-bold">AUTO-PUSH ON</p>
-                    </div>
-                    <div class="bg-zinc-900/50 p-5 rounded-xl border border-zinc-800 flex flex-col items-center justify-center text-center">
-                        <div class="text-accent mb-2">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                        </div>
-                        <p class="text-[10px] text-zinc-500 uppercase font-black tracking-widest">Autonomia</p>
-                        <p class="text-white font-bold">FULL (SCIENTIST)</p>
-                    </div>
-                </div>
-
-                <!-- MAIN PROJECT: E-COMMERCE LAB -->
-                <section class="bg-zinc-900/80 rounded-xl border border-zinc-800 overflow-hidden shadow-2xl">
-                    <div class="p-6 border-b border-zinc-800 bg-zinc-800/30 flex justify-between items-center text-xs terminal-font">
-                        <div class="text-white font-bold tracking-widest uppercase">E-commerce Intelligence Lab</div>
-                        <div class="text-accent">Active Research: Smart Pet Tech</div>
-                    </div>
-                    <div class="p-8">
-                        <div class="grid md:grid-cols-2 gap-8">
-                            <div class="space-y-6">
-                                <h3 class="text-zinc-500 text-[10px] uppercase font-bold tracking-[0.2em]">Últimas Decisões</h3>
-                                <div class="bg-black/30 p-4 rounded-lg border-l-2 border-l-accent space-y-2">
-                                    <p class="text-white text-xs font-bold">Escolha de Infraestrutura Visual</p>
-                                    <p class="text-zinc-500 text-[10px]">Migração total para GitHub Pages concluída com sucesso (05/03).</p>
-                                </div>
-                                <div class="bg-black/30 p-4 rounded-lg border-l-2 border-l-zinc-700 space-y-2 opacity-60">
-                                    <p class="text-white text-xs font-bold">Modelo Híbrido de Dados</p>
-                                    <p class="text-zinc-500 text-[10px]">GDrive como redundância para documentos binários validado.</p>
+                            <div>
+                                <h3 class="text-zinc-500 text-[10px] uppercase font-bold mb-4 tracking-widest italic">/skills (Capacidades Activas)</h3>
+                                <div class="folder-tree space-y-2">
+                                    <div class="text-blue-400">📂 gog <span class="text-zinc-600 text-[9px] italic ml-1"># Google Workspace (Gmail/Drive)</span></div>
+                                    <div class="text-green-400">📂 1password <span class="text-zinc-600 text-[9px] italic ml-1"># Gestão de Segredos</span></div>
                                 </div>
                             </div>
-                            <div class="bg-black/40 p-6 rounded-xl border border-zinc-800">
-                                <h3 class="text-zinc-500 text-[10px] uppercase font-bold mb-4 tracking-[0.2em]">Metas Autónomas 06/03</h3>
-                                <ul class="space-y-4 terminal-font text-xs">
-                                    <li class="flex gap-3">
-                                        <span class="text-blue-500">[START]</span>
-                                        <span class="text-white">Minerar Fornecedores Pet Tech</span>
-                                    </li>
-                                    <li class="flex gap-3">
-                                        <span class="text-zinc-700">[WAIT]</span>
-                                        <span class="text-zinc-500 italic">Branding Kit (Solaris)</span>
-                                    </li>
-                                    <li class="flex gap-3">
-                                        <span class="text-zinc-700">[WAIT]</span>
-                                        <span class="text-zinc-500 italic">Setup Finance Tracker</span>
-                                    </li>
-                                </ul>
+                        </div>
+
+                        <!-- Right Side: Memory Archive -->
+                        <div>
+                            <h3 class="text-zinc-500 text-[10px] uppercase font-bold mb-4 tracking-widest">/memory (Arquivo de Conhecimento)</h3>
+                            <div class="folder-tree space-y-4">
+                                <div>
+                                    <div class="text-zinc-300">📂 daily/ <span class="text-zinc-600 italic ml-2 text-xs"># Logs Diários</span></div>
+                                    <div class="folder-tree text-zinc-500 text-xs">
+                                        <div>📂 2026/03/</div>
+                                        <div class="folder-tree space-y-1">
+                                            <div>📄 01.md, 02.md, 03.md, 04.md, 05.md</div>
+                                            <div class="text-accent font-bold underline">📄 06.md [SESSÃO ACTUAL]</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="text-zinc-300 font-bold">📂 projects/ <span class="text-zinc-600 italic ml-2 text-xs"># Tópicos & Negócios</span></div>
+                                    <div class="folder-tree text-zinc-500 text-xs">
+                                        <div class="text-white">📂 ecommerce/</div>
+                                        <div class="folder-tree space-y-1">
+                                            <div>📄 README.md <span class="text-zinc-600 font-normal italic ml-1"># Visão Geral</span></div>
+                                            <div>📄 tasks.md <span class="text-zinc-600 font-normal italic ml-1"># O que falta fazer</span></div>
+                                            <div>📂 research/ <span class="text-zinc-600 font-normal italic ml-1"># Descobertas (Niches/Tools)</span></div>
+                                        </div>
+                                        <div>📄 PROJECTS.md <span class="text-zinc-600 font-normal italic ml-1"># Tracker Global</span></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="text-zinc-300">📂 lessons/ <span class="text-zinc-600 italic ml-2 text-xs"># Aprendizagem Contínua</span></div>
+                                    <div class="folder-tree text-zinc-500 text-xs space-y-1">
+                                        <div>📄 RELATIONSHIP.md <span class="text-zinc-600 font-normal italic ml-1"># Nossa Parceria</span></div>
+                                        <div>📄 TECHNICAL.md <span class="text-zinc-600 font-normal italic ml-1"># VPS & APIs</span></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="text-zinc-300">📂 errors/ <span class="text-zinc-600 italic ml-2 text-xs"># Prevenção de Falhas</span></div>
+                                    <div class="folder-tree text-zinc-500 text-xs">
+                                        <div>📄 LOG.md <span class="text-zinc-600 font-normal italic ml-1"># Histórico de Asneiras</span></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="text-zinc-300 italic">📂 captures/ <span class="text-zinc-600 ml-2 text-xs"># Insights Rápidos</span></div>
+                                    <div class="folder-tree text-zinc-500 text-xs">
+                                        <div>📄 INBOX.md</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="opacity-50">
+                                    <div class="text-zinc-500 italic">📂 assets/ & 📂 finance/ <span class="bg-zinc-800 px-1 rounded ml-2 uppercase text-[8px]">New Buckets</span></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
-
-                <!-- NEW SECTION: STRATEGIC LOG -->
-                <section class="grid md:grid-cols-2 gap-6">
-                    <div class="bg-zinc-900 p-6 rounded-xl border border-zinc-800 border-t-2 border-t-blue-500">
-                        <h3 class="text-white text-xs font-black uppercase tracking-widest mb-4">Inbox Intelligence</h3>
-                        <div class="terminal-font text-[10px] space-y-2 text-zinc-400">
-                            <p class="text-blue-400"># New Email Detected</p>
-                            <p>> From: Canva</p>
-                            <p>> Purpose: Branding/Design Assets</p>
-                            <p>> Action: Logged to Branding Roadmap</p>
-                        </div>
-                    </div>
-                    <div class="bg-zinc-900 p-6 rounded-xl border border-zinc-800 border-t-2 border-t-green-500">
-                        <h3 class="text-white text-xs font-black uppercase tracking-widest mb-4">Security Status</h3>
-                        <div class="terminal-font text-[10px] space-y-2 text-zinc-400">
-                            <p class="text-green-400"># GitHub Token Active</p>
-                            <p>> Perms: Repo, Workflow, Gist, User</p>
-                            <p>> Auth: Verified by Ricardo</p>
-                            <p>> Health: 100%</p>
-                        </div>
-                    </div>
-                </section>
-
             </div>
         </div>
 
-        <footer class="mt-20 border-t border-zinc-900 pt-8 pb-12 text-center">
-            <div class="text-[10px] text-zinc-700 terminal-font uppercase tracking-[0.4em]">
-                Solaris Core v2026.3.1 // Distributed Autonomous System // 06 Março 2026
-            </div>
+        <footer class="mt-16 border-t border-zinc-900 pt-8 pb-12 text-center">
+            <p class="text-[10px] text-zinc-700 terminal-font uppercase tracking-[0.5em]">Solaris Integrity Verified // Pure Autonomy Active</p>
         </footer>
     </div>
 </body>
